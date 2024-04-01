@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Clasificacion de peso</title>
+  </head>
+  <div id="contenedor">
+  <body>
+    <header>    
+            <h1>Analiza tu peso</h1>      
+    </header>
+    <nav>
+        <ul id="nav">
+          <li><a href="#">Inicio</a></li>          
+          <li><a href="#">Fotos</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Registrarse</a></li>
+        </ul>
+      </nav>
+    <main>
+      <h2>IMC</h2>
+      <p>El Índice de Masa Corporal (IMC) es un mecanismo de medición que te permite identificar si tu peso es bajo, está normal, tienes sobrepeso u obesidad; un peso inadecuado pueden conducir a enfermedades, como diabetes, anemia, osteoporosis, dislipidemia, glucosa alta en sangre, entre muchas otras. El IMC se debe calcular en niños y adultos y por eso te compartimos nuestra calculadora de IMC para que conozcas la idoneidad de tu peso y también te enseñamos a calcularlo de forma manual.</p><br>
+
+        <form action="">
+
+          <label for="peso">Ingresa tu peso</label><br>
+          <input type="number" step="any" id="peso" name="peso" placeholder="peso"><br><br>
+
+          <label for="estatura">Ingresa tu estatura</label> <br>
+          <input type= "number" step="any" id="estatura" name="estatura" placeholder="estatura"> <br><br>          
+
+          <section id="btns">
+            <button type="button" id="calcular" onclick="calculo_imc()">Calcular IMC</button>
+            <h2>Resultado</h2>
+            <p> El <span id="resultado">000</span></p>
+          </section>                  
+          
+        </form>
+
+        <button id="boton_reiniciar" onclick="recargarPagina()">Recargar Página</button>
+      
+    </main>
+    <aside id="der">
+        <h2>Tu peso es importante</h2>
+        <img src="./imagenes/imc.jpg" alt="IMC">
+      </aside>
+    <footer>
+        <ul>
+            <li>Daniel Builes Gomez</li>
+            <li>Andrea Chavarriaga</li>
+            <li>Estefania Gonzalez</li>
+        </ul>
+    </footer>
+    </div>
+    <script src="./peso.js/peso.js"></script>
+  </body>
+</html>
